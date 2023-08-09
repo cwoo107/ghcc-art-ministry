@@ -1,14 +1,9 @@
-<div>
-  <h1 class="font-bold text-4xl">GHCC Art Ministry</h1>
 
-  <p>Our Purpose Is to glorify God by making disciples who will impact every area of the world for Christ through art.</p>
-
-  <div id="visual_works" class="min-w-full">
-    <ul role="list" class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-      <%= render @visual_works %>
-
-      <!-- More people... -->
-    </ul>
-
+<div class="text-center align-middle">
+  <div class="pt-40 mt-20 flex items-center justify-center gap-x-6">
+    <%= link_to "Artists", artists_path, class: "rounded-md bg-indigo-600 px-3.5 py-2.5  font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" %>
+    <%= link_to "Visual", visual_works_path, class: "rounded-md bg-indigo-600 px-3.5 py-2.5  font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" %>
+    <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5  font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Poetry</a>
+    <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5  font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Music</a>
   </div>
 </div>

@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="7363c0b1-8b27-409b-9e53-2b96ce40c7b1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/artists_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/artists_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/artists/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/artists/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/artists/_artist.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/artists/_artist.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/artists/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/artists/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/visual_works/_visual_work.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/visual_works/_visual_work.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/visual_works/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/visual_works/index.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +17,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="2TlA11HnD1TZBxJWCt0HYUHEiCV" />
   <component name="ProjectViewState">
@@ -31,6 +40,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/assets/images" />
+    </key>
   </component>
   <component name="RunManager" selected="Rails.Development: ghcc-art-ministry">
     <configuration name="Development: ghcc-art-ministry" type="RailsRunConfigurationType" factoryName="Rails">
@@ -145,7 +159,7 @@
       <option name="presentableId" value="Default" />
       <updated>1691607076059</updated>
       <workItem from="1691607078904" duration="24000" />
-      <workItem from="1691607106493" duration="3201000" />
+      <workItem from="1691607106493" duration="9096000" />
     </task>
     <servers />
   </component>
