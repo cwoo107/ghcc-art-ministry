@@ -1,32 +1,40 @@
 <div id="<%= dom_id visual_work %>">
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Artist:</strong>
-    <%= visual_work.artist_id %>
-  </p>
+  <%= link_to visual_work do %>
 
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Artwork:</strong>
-    <%= image_tag(visual_work.artwork, width: '600', height: 'auto', data: { title: visual_work.title }) %>
-  </p>
+  <li class="col-span-1 flex flex-col divide-y divide-gray-200 rounded-lg bg-white text-center shadow">
+    <div class="flex flex-1 flex-col p-8">
+      <%= image_tag(visual_work.artwork, width: 'auto', height: 'auto', data: { title: visual_work.title }) %>
+      <h3 class="mt-6 text-sm font-medium text-gray-900"><%= visual_work.title %></h3>
+      <dl class="mt-1 flex flex-grow flex-col justify-between">
+        <dt class="sr-only">Artist Name</dt>
+        <%= link_to visual_work.artist do %>
+        <dd class="text-sm text-gray-500"><%= visual_work.artist.first_name %> <%= visual_work.artist.last_name %></dd>
+        <%end %>
+        <dt class="sr-only">Medium</dt>
+        <dd class="mt-3">
+          <span class="inline-flex items-center rounded-full bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20"><%= visual_work.medium %></span>
+        </dd>
+        <% if action_name == "show" %>
+        <dt class="sr-only">Description</dt>
+        <dd class="text-sm text-gray-500"><%= visual_work.description %></dd>
+          <% end %>
+      </dl>
+    </div>
+    <div>
+      <div class="-mt-px flex divide-x divide-gray-200">
+        <div class="flex w-0 flex-1">
+          <a href="mailto:<%= visual_work.artist.email %>" class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm font-semibold text-gray-900">
+            <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z" />
+              <path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z" />
+            </svg>
+            Email for Inquiries
+          </a>
+        </div>
+      </div>
+    </div>
+  </li>
 
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Title:</strong>
-    <%= visual_work.title %>
-  </p>
+    <% end %>
 
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Medium:</strong>
-    <%= visual_work.medium %>
-  </p>
-
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Description:</strong>
-    <%= visual_work.description %>
-  </p>
-
-  <% if action_name != "show" %>
-    <%= link_to "Show this visual work", visual_work, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-    <%= link_to 'Edit this visual work', edit_visual_work_path(visual_work), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
-    <hr class="mt-6">
-  <% end %>
 </div>

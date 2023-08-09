@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7363c0b1-8b27-409b-9e53-2b96ce40c7b1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/ghcc-art-ministry.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ghcc-art-ministry.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/artists_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/artists_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/artists/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/artists/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/visual_works/_visual_work.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/visual_works/_visual_work.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
@@ -24,7 +26,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager" selected="Rails.Development: ghcc-art-ministry">
     <configuration name="Development: ghcc-art-ministry" type="RailsRunConfigurationType" factoryName="Rails">
@@ -139,7 +145,7 @@
       <option name="presentableId" value="Default" />
       <updated>1691607076059</updated>
       <workItem from="1691607078904" duration="24000" />
-      <workItem from="1691607106493" duration="1557000" />
+      <workItem from="1691607106493" duration="3201000" />
     </task>
     <servers />
   </component>
