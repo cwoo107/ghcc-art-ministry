@@ -1,15 +1,15 @@
-<div class="mx-auto md:w-2/3 w-full flex">
+<div class="mx-auto md:w-2/3 w-full flex ">
   <div class="mx-auto">
     <% if notice.present? %>
       <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
     <% end %>
-
-    <%= render @visual_work %>
-
-    <%= link_to 'Edit this visual_work', edit_visual_work_path(@visual_work), class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-    <div class="inline-block ml-2">
-      <%= button_to 'Destroy this visual_work', visual_work_path(@visual_work), method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
+    <div class="max-h-24">
+      <div id="visual_works" class="min-w-full ">
+        <ul role="list" class="grid grid-cols-1 gap-6 lg:-mt-32">
+      <%= render @visual_work %>
+        </ul>
+      </div>
     </div>
-    <%= link_to 'Back to visual_works', visual_works_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-  </div>
+
+      </div>
 </div>

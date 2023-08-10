@@ -9,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      maxHeight: {
+        '1/2': '50%',
+      },
       backgroundImage: {
         'my-image-title': "url('/assets/background.webp')",
         'my-image': "url('/assets/background_no_title.webp')"
