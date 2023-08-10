@@ -11,7 +11,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'my-image-title': "url('/assets/background.webp')",
-        'my-image': "url('/assets/background_no_title.jpg')"
+        'my-image': "url('/assets/1B6A1085.webp')"
       },
       colors: {
         brown: {
