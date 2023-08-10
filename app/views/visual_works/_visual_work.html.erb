@@ -31,6 +31,17 @@
     </div>
     <div>
       <div class="-mt-px flex divide-x divide-gray-200">
+        <% if action_name == 'show' %>
+        <div class="flex w-0 flex-1">
+          <a href="/visual_works" class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm font-semibold text-gray-900">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5 text-gray-400">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
+            </svg>
+
+            Back to Visual Art
+          </a>
+        </div>
+          <% end %>
         <div class="flex w-0 flex-1">
           <a href="mailto:<%= visual_work.artist.email %>" class="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm font-semibold text-gray-900">
             <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
