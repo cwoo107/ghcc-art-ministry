@@ -12,23 +12,30 @@
   <%= javascript_importmap_tags %>
 </head>
 
-<body class="background-gradient ">
+<body class="background-gradient flex flex-col min-h-screen">
 <header class="absolute inset-x-0 top-0 z-50">
   <%= render "layouts/navbar" %>
 </header>
-<main class="no_blur blur-none mb-36 pb-36" >
-
-  <div class='bg-my-image bg-image blur-none'>
-
-    <div class="relative isolate px-6 pt-14 lg:px-8 ">
-
-      <div  class="mx-auto max-w-4xl py-48" >
+<div class="flex-grow flex flex-col">
+<main class="flex-grow relative" >
+  <div class='bg-my-image bg-image '>
+    <div class=" px-6 pt-14 lg:px-8 ">
+      <div  class="mx-auto max-w-4xl py-48 pb-4" >
         <%= yield %>
       </div>
-
     </div>
   </div>
-
 </main>
+<footer class="" >
+  <%= render "layouts/footer" %>
+</footer>
 </body>
+<script>
+    window.addEventListener('contextmenu', function(e) {
+        if (e.target.nodeName === 'IMG') {
+            e.preventDefault();
+        }
+    });
+
+</script>
 </html>

@@ -21,7 +21,11 @@
     <%= form.label :artwork %>
     <%= form.text_field :artwork, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
+  <div class="my-5">
+    <%= form.label :orientation %>
+    <%= form.select :orientation, [['landscape','col-span-3'],['portrait','col-span-2']],{}, {class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full"} %>
 
+  </div>
   <div class="my-5">
     <%= form.label :title %>
     <%= form.text_field :title, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>

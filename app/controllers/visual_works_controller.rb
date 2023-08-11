@@ -3,8 +3,22 @@ class VisualWorksController < ApplicationController
 
   # GET /visual_works or /visual_works.json
   def index
-    @visual_works = VisualWork.all
+    # Retrieve expensive and cheap products
+    landscape = VisualWork.where(orientation: 'col-span-3').order("RANDOM()")
+    portrait = VisualWork.where(orientation: 'col-span-2').order("RANDOM()")
+
+
+    # Interleave
+    @visual_works = landscape.zip(portrait).flatten.compact
+
+    # filter by medium
+
+    if params[:medium].present?
+      @visual_works = @visual_works.select { |work| work.medium.downcase.include?(params[:medium].downcase) }
+    end
+
   end
+
 
   # GET /visual_works/1 or /visual_works/1.json
   def show
@@ -17,6 +31,7 @@ class VisualWorksController < ApplicationController
 
   # GET /visual_works/1/edit
   def edit
+    @visual_work.medium = JSON.parse(@visual_work.medium).join(", ")
   end
 
   # POST /visual_works or /visual_works.json
@@ -65,6 +80,6 @@ class VisualWorksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def visual_work_params
-      params.require(:visual_work).permit(:artist_id, :artwork, :title, :medium, :description)
+      params.require(:visual_work).permit(:artist_id, :artwork, :title, :medium, :description, :orientation)
     end
 end
