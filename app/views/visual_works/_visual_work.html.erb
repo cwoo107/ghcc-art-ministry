@@ -28,7 +28,9 @@
           <%= link_to medium, visual_works_path(medium: medium), class: "inline-flex items-center rounded-full bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20" %>
             <% end %>
         </dd>
-        <div data-controller='toggle' class="mt-2 ">
+        <% if action_name == 'show' %>
+
+      <div data-controller='toggle' class="mt-2 ">
           <div data-action='click->toggle#toggle touch->toggle#toggle' class=" text-sm text-gray-500">
             View Full Description
           </div>
@@ -37,7 +39,6 @@
             <dd class="text-sm text-gray-500 text-left "><%= visual_work.description %></dd>
           </div>
         </div>
-        <% if action_name == 'show' %>
           <div data-controller="modal" data-action="keydown.esc->modal#close" tabindex="-1" class="relative z-10">
             <button  data-action="click->modal#open" class="text-sm text-gray-500">QR Code</button>
 
