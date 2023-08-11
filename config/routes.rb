@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :written_works
   get 'home/index'
   resources :visual_works
   resources :artists

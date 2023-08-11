@@ -48,8 +48,8 @@
                     <div class="space-y-2 py-6 opacity-100">
                       <%= link_to "Home", root_path, class: "text-white -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50" %>
                       <%= link_to "Artists", artists_path, class: "text-white -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50" %>
-                      <%= link_to "Visual Works", visual_works_path, class: "text-white -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50" %>
-                      <a href="#" class="text-white -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50">Written Art</a>
+                      <%= link_to "Visual ", visual_works_path, class: "text-white -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50" %>
+                      <%= link_to "Written ", written_works_path, class: "text-white -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50" %>
                       <a href="#" class="text-white -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50">Musical Art</a>
                     </div>
                   </div>
@@ -80,7 +80,7 @@
     <%= link_to "Home", root_path, class: "px-4 py-2 rounded hover:bg-stone-500 font-extralight leading-6 text-gray-100" %>
     <%= link_to "Artists", artists_path, class: "px-4 py-2 rounded hover:bg-stone-500 font-extralight leading-6 text-gray-100" %>
     <%= link_to "Visual", visual_works_path, class: "px-4 py-2 rounded hover:bg-stone-500 font-extralight leading-6 text-gray-100" %>
-    <a href="#" class="px-4 py-2 rounded hover:bg-stone-500 font-extralight leading-6 text-gray-100">Poetry</a>
+    <%= link_to "Written", written_works_path, class: "px-4 py-2 rounded hover:bg-stone-500 font-extralight leading-6 text-gray-100" %>
     <a href="#" class="px-4 py-2 rounded hover:bg-stone-500 font-extralight leading-6 text-gray-100">Music</a>
   </div>
   <div class="hidden lg:flex lg:flex-1 lg:justify-end">

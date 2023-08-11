@@ -1,0 +1,19 @@
+<div class="w-full">
+  <% if notice.present? %>
+    <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
+  <% end %>
+  <div class="flex justify-between items-center mb-2 -mt-24">
+    <div class=" px-6 py-6 sm:py-6 lg:px-8 ">
+      <div class="mx-auto w-full ">
+        <h2 class="w-full  p-8 bg-neutral-800 bg-opacity-75 font-extralight tracking-tight text-white text-2xl lg:text-6xl">Written Works</h2>
+        <p class="mt-1 w-full  p-4 font-extralight bg-brown-900 bg-opacity-75 leading-8 text-gray-300 text-sm lg:text-lg">A collection of written works, inspired by Exodus, created by the people of Golden Hlls Community Church.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="written_works" class="min-w-full ">
+    <ul role="list" class="divide-y divide-brown-100 overflow-hidden bg-white shadow-sm ring-1 ring-cream-900/5 sm:rounded-xl">
+    <%= render @written_works %>
+    </ul>
+  </div>
+</div>

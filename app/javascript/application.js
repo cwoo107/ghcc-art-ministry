@@ -15,3 +15,5 @@ application.register('popover', Popover)
 application.register('slideover', Slideover)
 application.register('tabs', Tabs)
 application.register('toggle', Toggle)
+import "trix"
+import "@rails/actiontext"
