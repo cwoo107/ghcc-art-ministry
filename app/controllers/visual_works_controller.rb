@@ -23,7 +23,14 @@ class VisualWorksController < ApplicationController
   # GET /visual_works/1 or /visual_works/1.json
   def show
     require "rqrcode"
-    @qr_code = RQRCode::QRCode.new(visual_work_url(@visual_work)).as_svg
+    qr_code = RQRCode::QRCode.new(visual_work_url(@visual_work))
+    @qr_code = qr_code.as_svg(
+      color: "000",
+      shape_rendering: "crispEdges",
+      module_size: 11,
+      standalone: true,
+      use_path: true
+    )
   end
 
   # GET /visual_works/new
