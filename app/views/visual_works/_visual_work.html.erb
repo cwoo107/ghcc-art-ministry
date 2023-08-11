@@ -37,7 +37,17 @@
             <dd class="text-sm text-gray-500 text-left "><%= visual_work.description %></dd>
           </div>
         </div>
-
+        <% if action_name == 'show' %>
+        <div data-controller='toggle' class="mt-2 ">
+          <div data-action='click->toggle#toggle touch->toggle#toggle' class=" text-sm text-gray-500">
+            QR Code
+          </div>
+          <div data-toggle-target='toggleable' class="m-2 hidden">
+            <dt class="sr-only">QR Code</dt>
+            <dd class="text-sm text-gray-500 text-center "><%= @qr_code.html_safe %></dd>
+          </div>
+        </div>
+      <% end %>
       </dl>
       </div>
       <div class="">
