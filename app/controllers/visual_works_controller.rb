@@ -25,11 +25,10 @@ class VisualWorksController < ApplicationController
     require "rqrcode"
     qr_code = RQRCode::QRCode.new(visual_work_url(@visual_work))
     @qr_code = qr_code.as_svg(
-      width: '100%',
-      height: '100%',
+      viewbox: '0 0 100 100',
       color: "000",
       shape_rendering: "crispEdges",
-      module_size: 11,
+      module_size: 6,
       standalone: true,
       use_path: true
     )
