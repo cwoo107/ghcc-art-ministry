@@ -31,7 +31,7 @@ class VisualWorksController < ApplicationController
 
   # GET /visual_works/1/edit
   def edit
-    # @visual_work.medium = JSON.parse(@visual_work.medium).join(", ")
+    @visual_work.medium = JSON.parse(@visual_work.medium).join(", ")
   end
 
   # POST /visual_works or /visual_works.json
