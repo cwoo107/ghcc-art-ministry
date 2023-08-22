@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :views
+  devise_for :admins
   draw :madmin
   resources :written_works
   get 'home/index'

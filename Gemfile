@@ -79,3 +79,5 @@ group :test do
 end
 
 gem "madmin", "~> 1.2"
+
+gem "devise", "~> 4.9"

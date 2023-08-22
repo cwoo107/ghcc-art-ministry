@@ -1,5 +1,6 @@
 class VisualWorksController < ApplicationController
   before_action :set_visual_work, only: %i[ show edit update destroy ]
+  before_action :authenticate_admin!, only: %i[ new create edit update destroy ]
 
   # GET /visual_works or /visual_works.json
   def index
