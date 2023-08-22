@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  draw :madmin
   resources :written_works
   get 'home/index'
   resources :visual_works

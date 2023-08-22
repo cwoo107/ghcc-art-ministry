@@ -17,3 +17,4 @@ application.register('tabs', Tabs)
 application.register('toggle', Toggle)
 import "trix"
 import "@rails/actiontext"
+

@@ -65,6 +65,6 @@ class WrittenWorksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def written_work_params
-      params.require(:written_work).permit(:artist_id, :genre, :title, :description, :content)
+      params.require(:written_work).permit(:artist_id, :genre, :title, :description, :content, :audio_description)
     end
 end
