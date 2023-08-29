@@ -91,6 +91,6 @@ class VisualWorksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def visual_work_params
-      params.require(:visual_work).permit(:artist_id, :artwork, :title, :medium, :description, :orientation, :audio_description, :content)
+      params.require(:visual_work).permit(:artist_id, :artwork, :title, :medium, :description, :orientation, :audio_description, :content, :for_sale, :price)
     end
 end
