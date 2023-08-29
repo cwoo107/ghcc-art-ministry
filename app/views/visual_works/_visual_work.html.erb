@@ -28,7 +28,7 @@
             <%= link_to medium, visual_works_path(medium: medium), class: "inline-flex items-center rounded-full bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20" %>
           <% end %>
         </dd>
-        <% if visual_work.for_sale? %>
+        <% if visual_work.for_sale? || visual_work.for_sale == 1 %>
         <dt class="sr-only">Sale Price</dt>
         <dd class="mt-3">
           <span class="inline-flex items-center rounded-full bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-600/20">
