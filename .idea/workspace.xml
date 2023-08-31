@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7363c0b1-8b27-409b-9e53-2b96ce40c7b1" name="Default Changelist" comment="added title 2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/written_works_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/written_works_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/written_work.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/written_work.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/visual_works/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/visual_works/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/written_works/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/written_works/_form.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/written_works/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/written_works/show.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -158,6 +163,7 @@
       <workItem from="1691694711310" duration="42444000" />
       <workItem from="1692044224396" duration="12640000" />
       <workItem from="1692716582503" duration="8507000" />
+      <workItem from="1693499658609" duration="549000" />
     </task>
     <task id="LOCAL-00001" summary="added title 2">
       <created>1691688325481</created>
