@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_08_29_193750) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_31_171407) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -74,6 +74,16 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_29_193750) do
     t.string "email"
   end
 
+  create_table "musical_works", force: :cascade do |t|
+    t.bigint "artist_id", null: false
+    t.string "title"
+    t.string "sheet_music"
+    t.string "iframe"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["artist_id"], name: "index_musical_works_on_artist_id"
+  end
+
   create_table "views", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -114,6 +124,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_29_193750) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "musical_works", "artists"
   add_foreign_key "visual_works", "artists"
   add_foreign_key "written_works", "artists"
 end
