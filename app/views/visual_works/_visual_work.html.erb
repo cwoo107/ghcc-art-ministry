@@ -29,12 +29,21 @@
           <% end %>
         </dd>
         <% if visual_work.for_sale? || visual_work.for_sale == 1 %>
+          <% if visual_work.price.present? %>
         <dt class="sr-only">Sale Price</dt>
         <dd class="mt-3">
           <span class="inline-flex items-center rounded-full bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-600/20">
            Sale Price $<%= visual_work.price.round(0) %>
           </span>
         </dd>
+            <% else %>
+            <dt class="sr-only">Sale Price</dt>
+            <dd class="mt-3">
+          <span class="inline-flex items-center rounded-full bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-700 ring-1 ring-inset ring-yellow-600/20">
+           Contact for Pricing
+          </span>
+            </dd>
+            <% end %>
           <% else %>
           <dt class="sr-only">Not For Sale</dt>
           <dd class="mt-3">
