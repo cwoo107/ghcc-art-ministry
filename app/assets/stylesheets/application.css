@@ -32,7 +32,7 @@
 
 .image-box-portrait {
     aspect-ratio: 4 / 5;
-    width: 100%; /* or any other value */
+    width: 75%; /* or any other value */
 }
 
 .image-box-portrait img {
@@ -109,3 +109,15 @@
     opacity: 1;
 }
 
+.justify-evenly-grid {
+    justify-content: space-evenly;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome and Safari */
+}
+
+.hide-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+}

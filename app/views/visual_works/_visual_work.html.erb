@@ -1,11 +1,13 @@
-<li id="<%= dom_id visual_work %>" class=" <%=visual_work.orientation %> flex-col rounded-lg bg-cream-50 text-center shadow w-full ">
-  <%= link_to visual_work do %>
+<div id="<%= dom_id visual_work %>" class=" col-span-3 flex-col  w-full ">
+  <div class="rounded-lg bg-cream-50 text-center shadow">
+
+    <%= link_to visual_work do %>
     <div class="flex flex-1 flex-col p-4 ">
       <% if visual_work.orientation == 'col-span-3' %>
-        <div class="image-box-landscape my-2">
+        <div class="image-box-landscape my-8">
       <% else %>
 
-        <div class="image-box-portrait my-2 ">
+        <div class="mx-auto image-box-portrait ">
       <% end %>
       <%= image_tag(visual_work.artwork, loading: "lazy", data: { title: visual_work.title } ) %>
       </div>
@@ -240,8 +242,8 @@
         </div>
       </div>
   <% end %>
-
-</li>
+    </div>
+</div>
 
 <% if false %>
   <div class="col-span-2 col-span-3 -mb-8"></div>
